@@ -1,0 +1,14 @@
+{{template "header" .}}
+	<div id="content" class="wrapper">
+  		<h1>Every Single Rant.</h1>
+	  	<div id="post">
+			<div class="posts">
+				{{range .Posts}}
+				<p><a href="/posts/{{.SafeURL}}">{{.Title}}</a><span class="date">{{.Created.Format "2006-01-02"}}</span></p>
+				{{else}}
+				Oh no.. There are no posts.
+				{{end}}
+			</div>
+		</div>
+	</div>
+{{template "footer" .}}
