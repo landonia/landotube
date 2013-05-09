@@ -1,8 +1,9 @@
 {{template "header" .}}
 	<div id="content" class="wrapper">
-  		<h1>Hello there. I am Landon.</h1>
-  		<p>I hope you find it interesting.</p>
+  		<h1>Howdy. I am Landon.</h1>
+  		<p>I'm a developer in London and hope you find my posts interesting.</p>
 	  	<div id="post">
+			<h2><a href="/posts">Posts</a></h2>
 			<div class="posts">
 				{{range .Posts}}
 				<p><a href="/posts/{{.SafeURL}}">{{.Title}}</a><span class="date">{{.Created.Format "2006-01-02"}}</span></p>
@@ -10,8 +11,7 @@
 				Oh no.. There are no posts.
 				{{end}}
 			</div>
-			<h2><a href="/posts">All Posts</a></h2>
-			<h2><a href="/about">All Me</a></h2>
+			<h2><a href="/about">About</a></h2>
 		</div>
 	</div>
 {{template "footer" .}}

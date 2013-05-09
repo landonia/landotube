@@ -17,10 +17,10 @@ html {
 
 /* Header Styles */
 #header {
-	border-bottom: 10px solid #ededed;
+	border-bottom: 1px solid #333;
 	padding: 5px 0;
-	height: 40px;
-	background-color: #33ccff;
+	height: 60px;
+	background-color: #ededed;
 }
 
 #header div.center {
@@ -33,7 +33,7 @@ html {
     text-align: center;
     vertical-align: middle;
     width: 100px;
-    height: 40px;
+    height: 60px;
 }
 
 .wraptocenter * {
@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	display: block;
-	margin: 50px 0 40px 0;
+	margin: 30px 0 20px 0;
 	font-size: 2em;
 }
 /* End Content */
@@ -158,6 +158,14 @@ p.thanks {
 	color: #8f8f8f;
 	font-size: 19px;
 	font-style: italic;
+}
+
+#post h2 a {
+	color: #333;
+	text-decoration: none;
+	background: #ededed;
+	padding: 1px 4px;
+	-moz-border-radius: 3px;
 }
 
 #content a, #post a, #footer a {
