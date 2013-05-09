@@ -17,9 +17,10 @@ html {
 
 /* Header Styles */
 #header {
-	border-bottom: 1px solid #ededed;
+	border-bottom: 10px solid #ededed;
 	padding: 5px 0;
-	height: 50px;
+	height: 40px;
+	background-color: #33ccff;
 }
 
 #header div.center {
@@ -32,7 +33,7 @@ html {
     text-align: center;
     vertical-align: middle;
     width: 100px;
-    height: 50px;
+    height: 40px;
 }
 
 .wraptocenter * {
