@@ -17,10 +17,19 @@ html {
 
 /* Header Styles */
 #header {
-	border-bottom: 1px solid #333;
-	padding: 5px 0;
-	height: 60px;
-	background-color: #ededed;
+	height: 10px;
+}
+
+#homenav {
+	padding-top: 3px;
+	text-align: left;
+	text-decoration: none;
+	font-size: .7em;
+}
+
+#homenav a {
+	text-decoration: none;
+	color: #333;
 }
 
 #header div.center {
@@ -171,7 +180,7 @@ p.thanks {
 #content a, #post a, #footer a {
 	color: #fff;
 	text-decoration: none;
-	background: #33ccff;
+	background: #75ADCE;
 	padding: 1px 4px;
 	-moz-border-radius: 3px;
 }
