@@ -58,6 +58,6 @@ to add a feature that would allow you to use a json backed data store such as mo
 
 ## About
 
-simplegoblog was written by [Landon Wainwright](https://github.com/landonia). 
+simplegoblog was written by [Landon Wainwright](http://www.landotube.com) | [GitHub](https://github.com/landonia). 
 
 Follow me on [Twitter @landoman](http://www.twitter.com/landoman)!
