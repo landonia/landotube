@@ -8,6 +8,8 @@ package main
 import (
 	"flag"
 	"github.com/landonia/simplegoblog/blog"
+	"log"
+	"os"
 )
 
 // Starts a new simple go blog server
@@ -26,6 +28,10 @@ func main() {
 	// Create a new data structure for storing the data
 	b := blog.New(config)
 
-	// Start the server
-	b.Start(":80")
+	// Start the blog server
+	err := b.Start(":80")
+	if err != nil {
+		log.Println(err)
+		os.Exit(1)
+	}
 }
