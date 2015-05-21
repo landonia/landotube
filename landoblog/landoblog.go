@@ -29,7 +29,7 @@ func main() {
 	b := blog.New(config)
 
 	// Start the blog server
-	err := b.Start(":80")
+	err := b.Start(":8080")
 	if err != nil {
 		log.Println(err)
 		os.Exit(1)
