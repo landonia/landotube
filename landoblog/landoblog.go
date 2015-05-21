@@ -21,7 +21,7 @@ func main() {
 	flag.Parse()
 
 	// Create a new configuration containing the info
-	config := &blog.Configuration{DevelopmentMode: true, Postsdir: postsdir, Templatesdir: templatesdir, Assetsdir: assetsdir}
+	config := &blog.Configuration{Title: "Life thru a Lando", DevelopmentMode: true, Postsdir: postsdir, Templatesdir: templatesdir, Assetsdir: assetsdir}
 
 	// Create a new data structure for storing the data
 	b := blog.New(config)
