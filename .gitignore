@@ -19,7 +19,7 @@ _cgo_export.*
 
 _testmain.go
 
-main/main
+landoblog/landoblog
 *.png#
 
 *.exe
