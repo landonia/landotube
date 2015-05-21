@@ -27,5 +27,5 @@ func main() {
 	b := blog.New(config)
 
 	// Start the server
-	b.Start(":8080")
+	b.Start(":80")
 }
