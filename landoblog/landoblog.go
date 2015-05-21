@@ -16,11 +16,11 @@ import (
 func main() {
 
 	// Define flags
-	var postsdir, templatesdir, assetsdir, port string
+	var postsdir, templatesdir, assetsdir, address string
 	flag.StringVar(&postsdir, "pdir", "../posts", "the directory for storing the posts")
 	flag.StringVar(&templatesdir, "tdir", "../templates", "the directory containing the templates")
 	flag.StringVar(&assetsdir, "adir", "../assets", "the directory containing the assets")
-	flag.StringVar(&port, "port", "8080", "the port to run the blog on")
+	flag.StringVar(&address, "address", ":8080", "the host:port to run the blog on")
 	flag.Parse()
 
 	// Create a new configuration containing the info
@@ -30,7 +30,7 @@ func main() {
 	b := blog.New(config)
 
 	// Start the blog server
-	err := b.Start(port)
+	err := b.Start(address)
 	if err != nil {
 		log.Println(err)
 		os.Exit(1)
