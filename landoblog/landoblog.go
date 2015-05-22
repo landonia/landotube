@@ -31,13 +31,18 @@ func main() {
 		Templatesdir:    templatesdir,
 		Assetsdir:       assetsdir,
 		NoOfRecentPosts: 4,
+
+		// We want to allow a short burst of 10 requests and otherwise it will allow 1 request/sec
 		RequestHandlerLimit: blog.ThrottleLimit{
-			Max: 1,
-			Ttl: time.Second,
+			Max: 10,          // Allow a max bucket amount of 10 requests
+			Ttl: time.Second, // Only fill a token in the bucket every second
 		},
+
+		// We want to allow a larger burst as the assets will likely be fetched in a larger chunk but once fetched it is unlikely
+		// they will be requested again for a while
 		AssetHandlerLimit: blog.ThrottleLimit{
-			Max: 500,
-			Ttl: time.Millisecond,
+			Max: 20,               // Allow an initial bucket of 20 to allow all the required assets to be delivered
+			Ttl: time.Second * 10, // Only fill a token in the bucket every 10 seconds
 		},
 	}
 
