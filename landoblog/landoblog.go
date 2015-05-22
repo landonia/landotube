@@ -10,6 +10,7 @@ import (
 	"github.com/landonia/simplegoblog/blog"
 	"log"
 	"os"
+	"time"
 )
 
 // Starts a new simple go blog server
@@ -24,7 +25,21 @@ func main() {
 	flag.Parse()
 
 	// Create a new configuration containing the info
-	config := &blog.Configuration{Title: "Life thru a Lando", NoOfRecentPosts: 4, Postsdir: postsdir, Templatesdir: templatesdir, Assetsdir: assetsdir}
+	config := &blog.Configuration{
+		Title:           "Life thru a Lando",
+		Postsdir:        postsdir,
+		Templatesdir:    templatesdir,
+		Assetsdir:       assetsdir,
+		NoOfRecentPosts: 4,
+		RequestHandlerLimit: blog.ThrottleLimit{
+			Max: 1,
+			Ttl: time.Second,
+		},
+		AssetHandlerLimit: blog.ThrottleLimit{
+			Max: 500,
+			Ttl: time.Millisecond,
+		},
+	}
 
 	// Create a new data structure for storing the data
 	b := blog.New(config)
