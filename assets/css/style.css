@@ -46,7 +46,7 @@ html {
 }
 
 #header div.center {
-	width: 600px; 
+	width: 800px; 
 	margin: 0 auto;
 }
 
@@ -98,11 +98,11 @@ p, ul, li, div {
 
 /* Content Area */
 #content.wrapper {
-	width: 600px;
+	width: 800px;
 }
 
 .wrapper {
-	width: 600px;
+	width: 800px;
 	padding: 0px 0px;
 	margin: 0 auto;
 }
@@ -223,7 +223,7 @@ p.thanks {
 	text-align: center;
 	margin: 50px auto 50px auto;
 	padding: 30px 0 30px 0;
-	width: 600px;
+	width: 800px;
 }
 
 .notfound-block img {
@@ -249,7 +249,7 @@ p.thanks {
 }
 
 #footer div.center {
-	width: 600px; 
+	width: 800px; 
 	margin: 0 auto;
 	font-size: .6em;
 }
