@@ -1,8 +1,12 @@
 {{template "header" .}}
 	<div id="content" class="wrapper">
   		<h1>Howdy. I'm Landon.</h1>
-  		<p>I'm working at my software consultancy company Landonia Ltd. I also love to create other things when time permits.</p>
-	  	<div id="post">
+  		<p>I'm a software engineer and I mainly do contracts through my software company Landonia Ltd. I like to create other things when I get time. I'm currently working on a few cool
+				projects (well I think so anyway) that I will open source on github when I believe they are in any kind of semi releasable state.</p>
+	</div>
+
+	<div class="wrapper">
+		<div id="post">
 			<h2><a href="/posts">Posts</a></h2>
 			<div class="posts">
 				{{range .Posts}}
@@ -16,4 +20,10 @@
 			<h2><a href="https://github.com/landonia">GitHub</a></h2>
 		</div>
 	</div>
+
+	<div class="about-block">
+		<img src="/assets/images/landon.wainwright.png" alt="Landon Wainwright crazy face">
+  		if(taskRepeat > 1) Automate(task);
+	</div>
+
 {{template "footer" .}}
