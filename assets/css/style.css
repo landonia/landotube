@@ -7,7 +7,7 @@ body {
 
 html, body {
 	font-family: "Andale Mono", "Monotype.com", monospace;
-	background: #FFF;
+	background: #298EEA;
 }
 
 html {
@@ -38,8 +38,8 @@ html {
 }
 
 #homenav .homenav-location {
+	background-color: rgba(10, 255, 10, 0.4);
 	color: #000;
-  background-color: rgba(39, 142, 195, .4);
 }
 
 #homenav .homenav-command {
@@ -120,7 +120,7 @@ h1 {
 	display: block;
 	margin: 30px 0 20px 0;
 	font-size: 1.3em;
-	color: rgba(39, 142, 195, 1);
+	color: #FFF;
 	letter-spacing: -2px;
 }
 
@@ -136,7 +136,7 @@ h2 {
 }
 
 #post .date {
-	color: #30BB31;
+	color: #FFF;
 	font-size: 12px;
 	left: -160px;
 	line-height: 24px;
@@ -182,7 +182,7 @@ p.thanks {
 #post h2 a {
 	color: #000;
 	text-decoration: none;
-	background: rgba(39, 142, 195, .65);
+	background: rgba(255, 255, 255, .65);
 	padding: 1px 4px;
 	-moz-border-radius: 3px;
 }
@@ -190,9 +190,12 @@ p.thanks {
 #content a, #post a, #footer a {
 	color: #000;
 	text-decoration: none;
-	background: rgba(39, 142, 195, 0.4);
 	padding: 1px 4px;
 	-moz-border-radius: 3px;
+}
+
+#content a, #post a {
+	background: rgba(10, 255, 10, 0.4);
 }
 
 #comments {
@@ -207,7 +210,7 @@ p.thanks {
 	border-bottom: 1px solid #000;
   border-right: 1px solid #000;
 	font-size: 17px;
-	background-color: #CCC;
+	background-color: rgba(255, 255, 255, .5);
 	color: #000;
 	margin: 50px auto 50px auto;
 	padding: 30px 0 30px 0;
