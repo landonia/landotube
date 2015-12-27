@@ -190,12 +190,12 @@ p.thanks {
 #content a, #post a, #footer a {
 	color: #000;
 	text-decoration: none;
-	padding: 1px 4px;
-	-moz-border-radius: 3px;
 }
 
 #content a, #post a {
 	background: rgba(10, 255, 10, 0.4);
+	padding: 1px 4px;
+	-moz-border-radius: 3px;
 }
 
 #comments {
