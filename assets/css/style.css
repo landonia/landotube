@@ -7,7 +7,7 @@ body {
 
 html, body {
 	font-family: "Andale Mono", "Monotype.com", monospace;
-	background: #298EEA;
+	background: #FFF;
 }
 
 html {
@@ -38,8 +38,8 @@ html {
 }
 
 #homenav .homenav-location {
-	background-color: rgba(10, 255, 10, 0.4);
-	color: #000;
+	background-color: rgba(41, 142, 234, 0.6);
+	color: #FFF;
 }
 
 #homenav .homenav-command {
@@ -120,7 +120,7 @@ h1 {
 	display: block;
 	margin: 30px 0 20px 0;
 	font-size: 1.3em;
-	color: #FFF;
+	color: #000;
 	letter-spacing: -2px;
 }
 
@@ -180,9 +180,9 @@ p.thanks {
 }
 
 #post h2 a {
-	color: #000;
+	color: #298EEA;;
 	text-decoration: none;
-	background: rgba(255, 255, 255, .65);
+	background: none;
 	padding: 1px 4px;
 	-moz-border-radius: 3px;
 }
@@ -193,7 +193,8 @@ p.thanks {
 }
 
 #content a, #post a {
-	background: rgba(10, 255, 10, 0.4);
+	background: rgba(41, 142, 234, 0.6);
+	color: #FFF;
 	padding: 1px 4px;
 	-moz-border-radius: 3px;
 }
@@ -210,7 +211,7 @@ p.thanks {
 	border-bottom: 1px solid #000;
   border-right: 1px solid #000;
 	font-size: 17px;
-	background-color: rgba(255, 255, 255, .5);
+	background-color: rgba(12, 12, 12, .1);
 	color: #000;
 	margin: 50px auto 50px auto;
 	padding: 20px 0 20px 0;
