@@ -7,10 +7,11 @@ package main
 
 import (
 	"flag"
-	"github.com/landonia/simplegoblog/blog"
 	"log"
 	"os"
 	"time"
+
+	"github.com/landonia/simplegoblog/blog"
 )
 
 // Starts a new simple go blog server
@@ -35,7 +36,7 @@ func main() {
 		// We want to allow a short burst of 10 requests and otherwise it will allow 1 request/sec
 		RequestHandlerLimit: blog.ThrottleLimit{
 			Max: 10,          // Allow a max bucket amount of 10 requests
-			Ttl: time.Second, // Only fill a token in the bucket every second
+			TTL: time.Second, // Only fill a token in the bucket every second
 		},
 	}
 
