@@ -21,7 +21,7 @@ With a healthy Go Language installed, simply run `go get github.com/landonia/lan
 With a healthy Go Language installed, simply run `go build github.com/landonia/landotube/main`
 
 ## Custom Example
-
+```go
 	package main
 
 	import (
@@ -50,7 +50,7 @@ With a healthy Go Language installed, simply run `go build github.com/landonia/l
 			panic(err.Error())
 		}
 	}
-
+```
 ## Future
 
 As the blog posts are marshalled to/from json and written to disk it would make sense
