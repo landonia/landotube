@@ -32,7 +32,7 @@ With a healthy Go Language installed, simply run `go build github.com/landonia/l
 	func main() {
 		blog := SimpleBlog.Create(directory)
 
-		// If you want ot overwrite the NotFound page
+		// If you want to overwrite the NotFound page
 		blog.NotFoundPage("page.html")
 
 		// Or
