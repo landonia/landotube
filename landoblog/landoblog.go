@@ -11,6 +11,7 @@ import (
 	"os"
 	"time"
 
+	"github.com/landonia/golog"
 	"github.com/landonia/simplegoblog/blog"
 )
 
@@ -18,12 +19,15 @@ import (
 func main() {
 
 	// Define flags
-	var postsdir, templatesdir, assetsdir, address string
+	var postsdir, templatesdir, assetsdir, address, loglevel string
+
 	flag.StringVar(&postsdir, "pdir", "../posts", "the directory for storing the posts")
 	flag.StringVar(&templatesdir, "tdir", "../templates", "the directory containing the templates")
 	flag.StringVar(&assetsdir, "adir", "../assets", "the directory containing the assets")
 	flag.StringVar(&address, "address", ":8080", "the host:port to run the blog on")
+	flag.StringVar(&loglevel, "loglevel", "debug", "The log level to use")
 	flag.Parse()
+	golog.LogLevel(loglevel)
 
 	// Create a new configuration containing the info
 	config := &blog.Configuration{

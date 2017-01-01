@@ -19,7 +19,5 @@ _cgo_export.*
 
 _testmain.go
 
-landoblog/landoblog
-*.png#
-
 *.exe
+.DS_Store
