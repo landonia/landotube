@@ -1,6 +1,6 @@
 # landotube
 
-My blog landotube created using the [simplegoblog](https://github.com/landonia/simplegoblog).
+My blog landotube created using the [simplegoblog](https://github.com/landonia/simplegoblog). Deployed using Docker.
 
 ## Overview
 
